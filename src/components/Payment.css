@@ -1,0 +1,78 @@
+.payment {
+  background-color: white;
+  padding: 0 2rem;
+}
+
+.payment__container > h1 {
+  padding: 2rem 0;
+  text-transform: uppercase;
+  font-family: "Object Sans Heavy";
+  font-size: 3rem;
+}
+
+.payment__container > h1 a {
+  text-decoration: none;
+}
+
+.payment__section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.payment__title {
+  text-transform: uppercase;
+  font-family: "Object Sans Heavy";
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.payment__address,
+.payment__items,
+.payment__details {
+  flex: 0.8;
+}
+
+.payment__details > form {
+  max-width: 400px;
+}
+
+.payment__details > h3 {
+  padding-bottom: 20px;
+}
+
+.payment__details > form > div > button {
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 1rem;
+}
+.payment__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.pmt-width {
+  width: 40%;
+}
+@media only screen and (max-width: 1200px) {
+  .payment__container > h1 {
+    font-size: 1.5rem;
+  }
+  .payment__flex {
+    flex-direction: column;
+  }
+  .pmt-width {
+    width: auto;
+  }
+  .payment__priceContainer > h3 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .payment__container > h1,
+  .payment__priceContainer > h3 {
+    font-size: 1rem;
+  }
+}

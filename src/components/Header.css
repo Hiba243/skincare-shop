@@ -1,0 +1,253 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #cd9042;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#combo-box-demo {
+  background-color: white;
+  padding-left: 0.5rem;
+  height: 18px;
+
+  font-family: "Object Sans";
+  outline: 1px solid;
+}
+
+.AutoComplete.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon
+  .MuiAutocomplete-inputRoot {
+  padding-right: 0;
+}
+.logo {
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Object Sans Heavy Slanted";
+  color: #c4293c;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.logo-skin {
+  font-family: "Object Sans Heavy";
+}
+.logo-text {
+  font-size: 1.5rem;
+}
+.no-underline {
+  text-decoration: none;
+}
+.flex-he {
+  display: flex;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: transparent;
+}
+
+.nav__link {
+  font-size: 1rem;
+  text-decoration: none;
+  padding-bottom: 0.4rem;
+  color: #c4293c;
+}
+.nav__link-item {
+  margin: 0 2rem 0 1rem;
+}
+.nav__logo {
+  font-size: 1rem;
+  z-index: 1;
+  color: #c4293c;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 3px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #001b2e;
+  border-radius: 20%;
+}
+
+.nav__menu {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  padding: 6rem 0;
+  flex-direction: column;
+  background-color: #c4293c;
+  width: 20%;
+  height: 100vh;
+  text-align: center;
+  transition: 0.3s;
+  z-index: 100;
+  list-style-type: none;
+}
+.nav__item {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-family: "Object Sans Heavy";
+  text-transform: uppercase;
+}
+.nav__link {
+  color: black;
+  font-size: 1rem;
+}
+
+.nav__menu.active {
+  left: 0;
+  top: 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  z-index: 150;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+  background-color: #001b2e;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  -webkit-transform: translateY(5px) rotate(45deg);
+  transform: translateY(5px) rotate(45deg);
+  background-color: #001b2e;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-5px) rotate(-45deg);
+  background-color: #001b2e;
+}
+
+.link-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 2rem;
+}
+.flex-au {
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+.icon-size {
+  font-size: 1.5rem;
+}
+.MuiIconButton-label {
+  color: #001b2e !important;
+}
+
+.MuiInput-underline:before {
+  display: none;
+}
+.MuiInput-underline:after {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header__search {
+    display: none;
+  }
+  .nav__menu {
+    width: 50%;
+  }
+  .header__option > p,
+  .header__optionBasket > p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .logo {
+    position: relative;
+    left: auto;
+    transform: none;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: 0.8rem;
+  }
+  .header__option > p,
+  .header__optionBasket > p {
+    font-size: 0.8rem;
+  }
+}
